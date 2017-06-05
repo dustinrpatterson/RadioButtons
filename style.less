@@ -1,0 +1,29 @@
+
+//* Hiding the radiobuttons */
+input[type="radio"] {
+    display: none;
+}
+
+
+/* Hidding the "check" status of inputs */
+label>input[type="radio"]~.fa-circle {
+    display: none;
+}
+
+
+/* Styling the "check" status */
+label>input[type="radio"]:checked~.fa-circle {
+    display: block;
+    color: @limeade;
+    margin-top: 10px;
+}
+ 
+
+/* Styling radiobuttons */
+label>input[type="radio"]:checked~.fa-circle-thin {
+    display: none;
+}
+ 
+label {
+    cursor: pointer;
+} 
